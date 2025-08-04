@@ -1,0 +1,61 @@
+.puzzle-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #f5f5fa;
+  margin-top: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.drop-zone {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.tile {
+  border-radius: 8px;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+.tile:active {
+  cursor: grabbing;
+  opacity: 0.9;
+  box-shadow: 0 0 0 3px #dcd9e5;
+}
+
+.win-text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b4263;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 8px 0;
+  border-top: 2px solid #8e86ac;
+  border-radius: 0 0 16px 16px;
+}
+
+.button1 {
+    position: absolute;
+    bottom: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 10px 10px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
